@@ -1,0 +1,16 @@
+@import "src/scss/breakpoints";
+
+.viewProfile {
+  margin-left: auto;
+  display: flex;
+  color: white;
+  padding: 0 30px;
+  @media screen and (max-width: $sm) {
+    padding: 0;
+  }
+  span {
+    @media screen and (max-width: $sm) {
+      display: none;
+    }
+  }
+}

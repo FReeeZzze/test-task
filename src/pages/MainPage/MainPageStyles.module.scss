@@ -1,0 +1,24 @@
+@import "src/scss/breakpoints";
+
+.mainPage {
+    width: 100%;
+    height: 100vh;
+    background: #FFFFFF;
+    .container {
+        display: grid;
+        grid-template: 50px minmax(50px, 1fr) minmax(78px, 2fr) minmax(358px, 5fr) / auto;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: url("./images/Headbcg.png") 100% 0 no-repeat;
+        background-size: 100% 35%;
+        @media screen and (min-width: $lg) {
+            background-size: contain;
+        }
+        @media screen and (max-width: $sm) {
+            padding: 10px;
+        }
+    }
+}
+

@@ -1,0 +1,62 @@
+@import "./colors";
+
+@import "./fonts-mixins";
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('/fonts/GothamPro/GothamPro.eot');
+  src: local('/fonts/GothamPro/Gotham Pro'), local('GothamPro'),
+  url('/fonts/GothamPro/GothamPro.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/GothamPro/GothamPro.woff') format('woff'),
+  url('/fonts/GothamPro/GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+h1{
+  @include f1();
+}
+h2{
+  font-family: "Poiret One", sans-serif!important;
+  @include f2();
+  color: $default-text-color;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+h3{
+  @include f3();
+}
+h4{
+  @include f4();
+}
+h5{
+  @include f5();
+}
+
+
+.f1{
+  @include f1();
+}
+.f2{
+
+  @include f2();
+}
+.f3{
+  @include f3();
+}
+.f4{
+  @include f4();
+}
+.f5{
+  @include f5();
+}
+.f6{
+  @include f6();
+}
+
+.f-grey{
+  color: $text-color-2;
+}

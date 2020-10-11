@@ -1,0 +1,33 @@
+.breadCrumbs {
+  display: grid;
+  margin-bottom: 20px;
+  nav {
+    margin-top: auto;
+  }
+  a, li {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    @media screen and (max-width: 576px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  span {
+    margin-top: auto;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}
